@@ -184,15 +184,15 @@ namespace masskontr4
                         //foreach (string y in arr) {
                         //    line2 += y + "";
                         //    Console.WriteLine(line2);
-                        }Console.WriteLine("Сортировка окончена в else");
+                        Console.WriteLine("Сортировка окончена  в else");
+                        }
                     string line = "";
                     foreach (string y in arr)
                     {
-                        line += y + "";
+                        line = y + "" + '\n' ;
                         Console.WriteLine(line);
-                    }
-                    return;
-                 //от 19-42!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    }return;
+                 
                 
                        
 
