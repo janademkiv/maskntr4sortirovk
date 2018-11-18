@@ -10,7 +10,7 @@ namespace masskontr4
     {
         static void Main(string[] args)
         {
-            string[] surname = new string[2];
+            string[] surname = new string[5];
 
             inPrint(surname);
             
@@ -157,12 +157,39 @@ namespace masskontr4
                 for (int j = i+1;j<arr.Length;j++) {
                     char istring = arr[i][0];
                     char jstring = arr[j][0];
+                    
                     if (istring > jstring) {
-                        string temp = arr[i];
-                        arr[i]= arr[j];
-                        arr[j] = temp;
-                    }
 
+                        //string temp = arr[i];
+                        //arr[i]= arr[j];
+                        //arr[j] = temp;
+                        string temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[j] = temp;
+                        string line = "";
+                        foreach (string y in arr)
+                        {
+                            line += y + "";
+                            Console.WriteLine(line);
+                        }
+                        Console.WriteLine("Сортировка окончена в if");
+                    }
+                    else {
+                        //string temp = arr[i];
+                        //arr[i] = arr[j];
+                        //arr[j] = temp;
+                        string temp = arr[j];
+                        arr[j] = arr[i];
+                        arr[j] = temp;
+                        string line2 = "";
+                        foreach (string y in arr) {
+                            line2 += y + "";
+                            Console.WriteLine(line2);
+                        }
+                        Console.WriteLine("Сортировка окончена в else");
+
+                    }
+                    
                 }
 
             }
