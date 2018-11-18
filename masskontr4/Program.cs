@@ -50,7 +50,7 @@ namespace masskontr4
                         break;
                     case 6:
                         Console.WriteLine("6. Показать список фамилий в одну строку.");
-                        arrayToLine(surname);
+                        Console.Write(arrayToLine(surname));
                         break;
                     case 7:
                         Console.WriteLine("7. Сортировка по алфавиту.");
@@ -166,29 +166,37 @@ namespace masskontr4
                         string temp = arr[j];
                         arr[j] = arr[i];
                         arr[j] = temp;
-                        string line = "";
-                        foreach (string y in arr)
-                        {
-                            line += y + "";
-                            Console.WriteLine(line);
-                        }
+                        //string line = "";
+                        //foreach (string y in arr)
+                        //{
+                        //    line += y + "";
+                        //    //Console.WriteLine(line);
+                        //}
                         Console.WriteLine("Сортировка окончена в if");
-                    }
-                    else {
+                    }else {
                         //string temp = arr[i];
                         //arr[i] = arr[j];
                         //arr[j] = temp;
                         string temp = arr[j];
                         arr[j] = arr[i];
                         arr[j] = temp;
-                        string line2 = "";
-                        foreach (string y in arr) {
-                            line2 += y + "";
-                            Console.WriteLine(line2);
-                        }
-                        Console.WriteLine("Сортировка окончена в else");
-
+                        //string line2 = "";
+                        //foreach (string y in arr) {
+                        //    line2 += y + "";
+                        //    Console.WriteLine(line2);
+                        }Console.WriteLine("Сортировка окончена в else");
+                    string line = "";
+                    foreach (string y in arr)
+                    {
+                        line += y + "";
+                        Console.WriteLine(line);
                     }
+                    return;
+                 //от 19-42!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                
+                       
+
+                    
                     
                 }
 
