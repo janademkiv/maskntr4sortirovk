@@ -161,35 +161,20 @@ namespace masskontr4
                     if (istring > jstring) {
                         string temp = arr[j];
                         arr[j] = arr[i];
-                        arr[j] = temp;
+                        arr[i] = temp;
                         
-                        Console.WriteLine("Сортировка окончена в if");
-                    }else {
-                        
-                        string temp = arr[j];
-                        arr[j] = arr[i];
-                        arr[j] = temp;
-                        
-                        Console.WriteLine("Сортировка окончена  в else");
-                        }
-                    string line = "";
-                    foreach (string y in arr)
-                    {
-                        line = y + "" + '\n' ;
-                        Console.WriteLine(line);
-                    }return;
-                 
-                
-                       
-
-                    
+                    }
                     
                 }
 
             }
 
+            string line = "";
+            foreach (string y in arr)
+            {
+                line = y + "" + '\n';
+                Console.WriteLine(line);
+            }
         }
-
-        
     }
 }
